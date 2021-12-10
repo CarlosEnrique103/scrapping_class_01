@@ -1,0 +1,30 @@
+{
+	"name": "Scrapping project.",
+	"description": "Extract information from a linkedin profile.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [
+		{
+			"matches": ["https://www.linkedin.com/*"],
+			"js": ["./app.js"]
+		}
+	],
+	"action": {
+		"default_popup": "./App/index.html",
+		"default_icon": {
+			"48": "./App/icons/48.png",
+			"64": "./App/icons/64.png",
+			"128": "./App/icons/128.png",
+			"256": "./App/icons/256.png",
+			"512": "./App/icons/512.png"
+		}
+	},
+	"permissions": ["activeTab", "scripting"],
+	"icons": {
+		"48": "./App/icons/48.png",
+		"64": "./App/icons/64.png",
+		"128": "./App/icons/128.png",
+		"256": "./App/icons/256.png",
+		"512": "./App/icons/512.png"
+	}
+}

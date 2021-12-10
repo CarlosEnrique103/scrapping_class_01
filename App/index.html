@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet"
+		href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+		<title>Scrapping linkedin</title>
+
+		<style>
+			.button {
+				display: inline-block;
+				padding: 1rem;
+				color: white;
+				text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+				transition: all 250ms;
+				background-color: #07d;
+				font-size: 2rem;
+				font-family: "Arial";
+				font-weight: 400;
+			}
+
+			.button:focus,
+			.button:hover {
+				cursor: pointer;
+			}
+
+			html {
+				width: 100%;
+				height: 100%;
+				background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
+				overflow-x: hidden;
+				overflow-y: hidden;
+			}
+
+			body {
+				text-align: center;
+				display: table;
+				width: 100%;
+				height: 100%;
+				overflow-x: hidden;
+				overflow-y: hidden;
+			}
+
+			#wrap {
+				box-sizing: border-box;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<button class="button linkedin">
+				<i class="fa linkedin"></i> LinkedIn
+			</button>
+		</div>
+	</body>
+	<script src="./scrap.js"></script>
+</html>
