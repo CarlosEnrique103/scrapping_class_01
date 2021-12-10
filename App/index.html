@@ -4,58 +4,55 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet"
-		href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
 		<title>Scrapping linkedin</title>
-
 		<style>
-			.button {
-				display: inline-block;
-				padding: 1rem;
+			.btn_linkedin {
+				width: 100px;
+				height: 50px;
+				padding: 20px;
 				color: white;
 				text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.1);
 				border: 1px solid rgba(0, 0, 0, 0.1);
 				box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 				transition: all 250ms;
 				background-color: #07d;
-				font-size: 2rem;
+				font-size: 16px;
 				font-family: "Arial";
 				font-weight: 400;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 
-			.button:focus,
-			.button:hover {
+			.btn_linkedin:focus,
+			.btn_linkedin:hover {
 				cursor: pointer;
+				background-color: rgb(34, 133, 219);
 			}
 
 			html {
 				width: 100%;
 				height: 100%;
-				background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
-				overflow-x: hidden;
-				overflow-y: hidden;
+				background: #f0ebeb;
 			}
 
 			body {
 				text-align: center;
-				display: table;
-				width: 100%;
-				height: 100%;
-				overflow-x: hidden;
-				overflow-y: hidden;
 			}
 
 			#wrap {
-				box-sizing: border-box;
-				display: table-cell;
-				vertical-align: middle;
+				width: 100px;
+				height: 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="wrap">
-			<button class="button linkedin">
-				<i class="fa linkedin"></i> LinkedIn
+			<button class="btn_linkedin">
+				<i class="fa linkedin"></i> Scrapping LinkedIn
 			</button>
 		</div>
 	</body>
